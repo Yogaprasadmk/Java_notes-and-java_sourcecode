@@ -209,10 +209,39 @@ class Patterns
         * * *
           *
          */
-        
-        public static void main(String[] args) 
-         {          
-             int n = 5;
-             Pattern9(n);
+
+        //  pattern10
+        static void Pattern10(int n){
+                for(int i = 0;i<=2*n - 1;i++){ //row
+                    int stars = i;
+                    if(i>5){
+                        stars = 2*n - i;
+                    }
+                    for(int j = 1;j<=stars;j++){
+                        System.out.print("* ");
+                    }
+                    System.out.println();
+                }
         }
+        //output
+        /*         
+        
+        * 
+        * *   
+        * * * 
+        * * * * 
+        * * * * * 
+        * * * *
+        * * *
+        * * 
+        * 
+        
+        */
+        public static void main(String[] args) 
+        {
+                    int n = 5;
+                    Pattern10(n);
+        }
+        // output
+        
 }
