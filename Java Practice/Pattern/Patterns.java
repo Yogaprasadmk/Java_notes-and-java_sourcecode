@@ -237,11 +237,60 @@ class Patterns
         * 
         
         */
+        // pattern 12
+        static void Pattern12(int n){
+            // spaces
+            int spaces = 2 * (n - 1);
+            for(int i = 0;i<n;i++){
+                // numbers
+                for(int j = 1;j<=i;j++){
+                    System.out.print(j+" ");
+                }
+                // spacing
+                for(int j = 1;j<=spaces;j++){
+                    System.out.print("  ");
+                } 
+                // numbers
+                 for(int j = i;j>=1;j--){
+                    System.out.print(j+" ");
+                }
+                System.out.println();
+                spaces = spaces - 2;
+            }
+        }
+        // output
+        /*
+        1             1 
+        1 2         2 1 
+        1 2 3     3 2 1 
+        1 2 3 4 4 3 2 1 
+         */
+
+        // pattern13
+        static void Pattern13(int n){
+            int  num = 1;
+            for(int i = 0;i<=n;i++){
+                for(int j = 1;j<=i;j++){
+                    System.out.print(num+" ");
+                    num += 1;
+                }
+                System.out.println();
+                
+            }
+        } 
+        // output
+        /* 1 
+           2 3
+           4 5 6
+           7 8 9 10
+           11 12 13 14 15 */
+
+        
         public static void main(String[] args) 
         {
                     int n = 5;
-                    Pattern10(n);
+                    Pattern13(n);
         }
-        // output
+        
         
 }
