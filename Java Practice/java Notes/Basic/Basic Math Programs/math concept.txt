@@ -1,0 +1,16 @@
+n = 7789
+
+Extraction of digits:
+
+I need all digits in a given number
+
+step1:
+n is divisible by 10
+
+Step 2:
+use the modulo operator for remainder
+use the divisor operator for quiotent
+
+Step 3:
+first n is modulo of 10 and we get 789 and the 789 is divisble by divisor 10
+repeat the steps by getting n is becoming 0
