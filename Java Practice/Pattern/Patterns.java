@@ -284,12 +284,45 @@ class Patterns
            4 5 6
            7 8 9 10
            11 12 13 14 15 */
-
+        //pattern14
+        static void Pattern14(int n){
+            for(int i = 0;i<n;i++){
+            for(char ch ='A';ch<='A' + i;ch++){
+                System.out.print(ch+" ");
+            }
+            System.out.println();
+        }
         
+       //
+        /*
+        A 
+        A B
+        A B C
+        A B C D
+        A B C D E
+        */
+        // pattern15
+        static void Pattern15(int n){
+            for(int i = 0;i<n;i++){
+                for(char ch = 'A';ch<='E' - i;ch++){
+                    System.out.print(ch+" ");
+                }
+                System.out.println();
+            }
+        }
+        // output
+        /*
+         A B C D E 
+         A B C D   
+         A B C     
+         A B       
+         A
+         */
         public static void main(String[] args) 
         {
                     int n = 5;
-                    Pattern13(n);
+                // here you can change the pattern number by calling here.
+                    Pattern15(n);
         }
         
         
