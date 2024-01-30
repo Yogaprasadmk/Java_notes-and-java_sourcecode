@@ -318,11 +318,26 @@ class Patterns
          A B       
          A
          */
+         static void Pattern16(int n){
+            for(int i = 0;i<n;i++){
+                char ch = ((char)((int)'A' + i)); // int  to char
+                for(int j = 0;j<=i;j++){
+                    System.out.print(ch +" ");
+                }
+             System.out.println();   
+            }
+        }
+        //output
+        /* A 
+           B B       
+           C C C     
+           D D D D   
+           E E E E E */
         public static void main(String[] args) 
         {
                     int n = 5;
                 // here you can change the pattern number by calling here.
-                    Pattern15(n);
+                    Pattern16(n);
         }
         
         
