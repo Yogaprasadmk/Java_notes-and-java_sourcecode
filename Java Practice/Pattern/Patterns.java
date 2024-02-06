@@ -334,7 +334,6 @@ class Patterns
            D D D D   
            E E E E E */
         // pattern17
-        
         static void Pattern17(int n){
             //outer loop
             for(int i=0;i<n;i++){
@@ -367,11 +366,27 @@ class Patterns
         A B C D C B A      
       A B C D E D C B A      
          */
+        // pattern 18
+         static void Pattern18(int n){
+            for(int i = 0;i<n;i++){
+                for(char ch = (char)((int)'E'- i);ch <= 'E';ch++){
+                    System.out.print(ch+" ");
+                }
+                System.out.println();
+            }
+        }
+        /*
+         E 
+         D E       
+         C D E     
+         B C D E   
+         A B C D E
+         */
         public static void main(String[] args) 
         {
                     int n = 5;
                 // here you can change the pattern number by calling here.
-                    Pattern16(n);
+                    Pattern18(n);
         }
         
         
