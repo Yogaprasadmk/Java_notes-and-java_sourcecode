@@ -1,4 +1,5 @@
-// abstract
+//notes 1
+// abstract class
 abstract class Employee{
         private String name;
         int salary;
@@ -41,5 +42,28 @@ public class Main{
         int esalary = obj.gs();
         System.out.println(ename);
         System.out.println(esalary);
+    }
+}
+
+// notes 2
+// abstract class
+abstract class employee{
+    abstract void display();
+    // we can also declare mathid in abstract class
+    void displa(){
+        System.out.println("hello ");
+    }
+}
+// derived class
+class emp extends employee{
+    void display(){
+        System.out.println("Hello Wolrds");
+    }
+}
+class Main{
+    public static void main(String args[]){
+        emp io = new emp();
+        io.display();
+        io.displa();
     }
 }
