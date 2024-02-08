@@ -30,8 +30,19 @@ class Main{
         C.a = 6;
         C.b = 4;
         C.c = 5;
+        System.out.println(C.a);
+        System.out.println(C.b);
         System.out.println(C.c);
+        C.displayGP();
+        C.displayP();
         C.displayC();
-        
     }
 }
+// output 
+java -cp /tmp/y6WcknWyle Main
+6
+4
+5
+Grand Parent
+Parent
+Children
