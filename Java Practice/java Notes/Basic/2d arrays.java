@@ -13,9 +13,9 @@ import java.util.Scanner;
             }
             
         }
-        for(int i = 0;i<b.length;i++){
-            for(int j = 0;j<b[i].length;j++){
-               System.out.print(b[i][j]+" ");
+        for(int a[]:b){
+            for(int val:a){
+               System.out.print(val+" ");
             }
             System.out.println();
         }
