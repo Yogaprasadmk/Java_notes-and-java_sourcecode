@@ -382,11 +382,66 @@ class Patterns
          B C D E   
          A B C D E
          */
+        //pattern 19
+                static void Pattern19(int n){
+                        int n = 5;
+        //initial space
+        int inis = 0;
+           for(int i=0;i<n;i++)
+           {
+            //   stars
+               for(int j = 1;j<=n-i;j++){
+                   System.out.print("* ");
+               }
+            // spaces   
+               for(int j = 0;j<inis;j++){
+                   System.out.print("  ");
+               }
+            // stars  
+               for(int j = 01;j<=n-i;j++){
+                   System.out.print("* ");
+               }
+               inis += 2;
+               System.out.println();
+           }
+        //   spaces for next star
+           inis = 2*(n-2);
+            for(int i=1;i<=n;i++)
+           {
+            //   stars
+               for(int j = 1;j<=i;j++){
+                   System.out.print("* ");
+               }
+            // spaces   
+               for(int j = 0;j<inis;j++){
+                   System.out.print("  ");
+               }
+            // stars  
+               for(int j = 1;j<=i;j++){
+                   System.out.print("* ");
+               }
+               inis -= 2;
+               System.out.println();
+           }
+                       }
+          //output
+        /*
+        * * * * * * * * * * 
+        * * * *     * * * * 
+        * * *         * * * 
+        * *             * * 
+        *                 * 
+        *                 * 
+        * *             * * 
+        * * *         * * * 
+        * * * *     * * * * 
+        * * * * * * * * * * 
+        */
         public static void main(String[] args) 
         {
                     int n = 5;
                 // here you can change the pattern number by calling here.
-                    Pattern18(n);
+                    Pattern19(n);
         }
         
         
