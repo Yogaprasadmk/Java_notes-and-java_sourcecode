@@ -437,11 +437,53 @@ class Patterns
         * * * *     * * * * 
         * * * * * * * * * * 
         */
+        //pattern20
+        static void Pattern20(int n){
+            int spaces = 2*n -2 ;
+            for(int i = 1;i<=2*n - 1;i++){ //row
+                int stars = i;
+                if(i>n){
+                    stars = 2*n - i;
+                }
+                // stars
+                for(int j = 1;j<=stars;j++){
+                    System.out.print("* ");
+                }
+                // spaces
+                for(int j = 1;j<=spaces;j++){
+                    System.out.print("  ");
+                }
+                // stars
+                for(int j = 1;j<=stars;j++){
+                    System.out.print("* ");
+                }
+                System.out.println();
+                if(i<n) {
+                    spaces -=  2;
+                }
+                else {
+                    spaces += 2;
+                }
+            }
+        }
+        /* 
+         output:
+         *                 * 
+         * *             * * 
+         * * *         * * * 
+         * * * *     * * * * 
+         * * * * * * * * * * 
+         * * * *     * * * * 
+         * * *         * * * 
+         * *             * * 
+         *                 * 
+
+        */
         public static void main(String[] args) 
         {
                     int n = 5;
-                // here you can change the pattern number by calling here.
-                    Pattern19(n);
+                // here you can change the pattern number by calling here and print it.
+                    Pattern20(n);
         }
         
         
