@@ -504,12 +504,45 @@ class Patterns
         *   *
         *   *
         *****
+        */
+        //pattern 22
+        static void Pattern22(int n){
+            // outer loop
+            for(int i = 0;i<2*n-1;i++){
+                // inner loop
+                for(int j = 0;j<2*n-1;j++){
+                    // top position
+                    int u = i;
+                    // left position 
+                    int l = j;
+                    // right position
+                    int r = (2*n-2)-j;
+                    // bottom position
+                    int b = (2*n-2)-i;
+                    System.out.print(n - Math.min(Math.min(u,b),Math.min(l, r))+" ");
+                }
+                System.out.println();
+            }
+            
+        } 
+        // ouput
+        /*
+        5 5 5 5 5 5 5 5 5 
+        5 4 4 4 4 4 4 4 5 
+        5 4 3 3 3 3 3 4 5 
+        5 4 3 2 2 2 3 4 5 
+        5 4 3 2 1 2 3 4 5 
+        5 4 3 2 2 2 3 4 5 
+        5 4 3 3 3 3 3 4 5 
+        5 4 4 4 4 4 4 4 5 
+        5 5 5 5 5 5 5 5 5
+         */
         
         public static void main(String[] args) 
         {
                     int n = 5;
-                // here you can change the pattern number by calling here and print it.
-                    Pattern20(n);
+                // here you can change the pattern number,according you need by calling here and print it.
+                    Pattern22(n);
         }
         
         
